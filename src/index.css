@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.container-main {
+  @apply max-w-7xl mx-auto px-4 py-8;
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-voting-blue text-white rounded-lg hover:bg-blue-700 transition duration-300 font-semibold;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400 transition duration-300 font-semibold;
+}
+
+.btn-danger {
+  @apply px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-300 font-semibold;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-lg p-6 transition hover:shadow-xl hover:scale-105 duration-300;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-voting-blue focus:ring-2 focus:ring-voting-blue focus:ring-opacity-50;
+}
+
+.error-message {
+  @apply text-red-600 text-sm mt-2;
+}
+
+.success-message {
+  @apply text-green-600 text-sm mt-2;
+}
+
+.loading {
+  @apply animate-spin h-6 w-6 rounded-full border-4 border-voting-blue border-t-transparent;
+}
